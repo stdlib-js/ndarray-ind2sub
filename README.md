@@ -45,20 +45,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/ndarray-ind2sub
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import ind2sub from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-ind2sub@deno/mod.js';
-```
-
-You can also import the following named exports from the package:
-
-```javascript
-import { assign } from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-ind2sub@deno/mod.js';
+var ind2sub = require( '@stdlib/ndarray-ind2sub' );
 ```
 
 #### ind2sub( shape, idx\[, options] )
@@ -74,13 +84,14 @@ var s = ind2sub( shape, 2 );
 
 The function supports the following `options`:
 
--   `mode`: specifies how to handle a linear index which exceeds array dimensions. The following modes are supported:
+-   **mode**: specifies how to handle a linear index which exceeds array dimensions. The following modes are supported:
 
     -   `throw`: specifies that the function should throw an error when a linear index exceeds array dimensions.
+    -   `normalize`: specifies that the function should normalize negative linear indices and throw an error when a linear index exceeds array dimensions.
     -   `wrap`: specifies that the function should wrap around a linear index exceeding array dimensions using modulo arithmetic.
     -   `clamp`: specifies that the function should set a linear index exceeding array dimensions to either `0` (minimum linear index) or the maximum linear index.
 
--   `order`: specifies whether an array is `row-major` (C-style) or `column-major` (Fortran-style). Default: `'row-major'`.
+-   **order**: specifies whether an array is `row-major` (C-style) or `column-major` (Fortran-style). Default: `'row-major'`.
 
 By default, the function assumes a row-major array. To return subscripts for a column-major array, set the `order` option.
 
@@ -146,8 +157,8 @@ The function accepts the same `options` as above.
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import numel from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-numel@deno/mod.js';
-import ind2sub from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-ind2sub@deno/mod.js';
+var numel = require( '@stdlib/ndarray-base-numel' );
+var ind2sub = require( '@stdlib/ndarray-ind2sub' );
 
 var shape = [ 3, 3, 3 ];
 var len = numel( shape );
@@ -223,7 +234,7 @@ for ( i = 0; i < len; i++ ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -285,11 +296,11 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/ndarray/array]: https://github.com/stdlib-js/ndarray-array/tree/deno
+[@stdlib/ndarray/array]: https://github.com/stdlib-js/ndarray-array
 
-[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor/tree/deno
+[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor
 
-[@stdlib/ndarray/sub2ind]: https://github.com/stdlib-js/ndarray-sub2ind/tree/deno
+[@stdlib/ndarray/sub2ind]: https://github.com/stdlib-js/ndarray-sub2ind
 
 <!-- </related-links> -->
 
