@@ -45,38 +45,32 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/ndarray-ind2sub
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-ind2sub = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-ind2sub@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var ind2sub = require( 'path/to/vendor/umd/ndarray-ind2sub/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-ind2sub@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.ind2sub;
-})();
-</script>
+var ind2sub = require( '@stdlib/ndarray-ind2sub' );
 ```
 
 #### ind2sub( shape, idx\[, options] )
@@ -164,14 +158,9 @@ The function accepts the same `options` as above.
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-numel@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-ind2sub@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var numel = require( '@stdlib/ndarray-base-numel' );
+var ind2sub = require( '@stdlib/ndarray-ind2sub' );
 
 var shape = [ 3, 3, 3 ];
 var len = numel( shape );
@@ -208,11 +197,6 @@ for ( i = 0; i < len; i++ ) {
         console.log( '' );
     }
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -282,8 +266,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/ndarray-ind2sub.svg
 [npm-url]: https://npmjs.org/package/@stdlib/ndarray-ind2sub
 
-[test-image]: https://github.com/stdlib-js/ndarray-ind2sub/actions/workflows/test.yml/badge.svg?branch=main
-[test-url]: https://github.com/stdlib-js/ndarray-ind2sub/actions/workflows/test.yml?query=branch:main
+[test-image]: https://github.com/stdlib-js/ndarray-ind2sub/actions/workflows/test.yml/badge.svg?branch=v0.2.0
+[test-url]: https://github.com/stdlib-js/ndarray-ind2sub/actions/workflows/test.yml?query=branch:v0.2.0
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/ndarray-ind2sub/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/ndarray-ind2sub?branch=main
@@ -317,11 +301,11 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/ndarray/array]: https://github.com/stdlib-js/ndarray-array/tree/umd
+[@stdlib/ndarray/array]: https://github.com/stdlib-js/ndarray-array
 
-[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor/tree/umd
+[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor
 
-[@stdlib/ndarray/sub2ind]: https://github.com/stdlib-js/ndarray-sub2ind/tree/umd
+[@stdlib/ndarray/sub2ind]: https://github.com/stdlib-js/ndarray-sub2ind
 
 <!-- </related-links> -->
 
