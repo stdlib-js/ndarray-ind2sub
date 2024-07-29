@@ -52,13 +52,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import ind2sub from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-ind2sub@deno/mod.js';
+import ind2sub from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-ind2sub@v0.2.2-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { assign } from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-ind2sub@deno/mod.js';
+import { assign } from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-ind2sub@v0.2.2-deno/mod.js';
 ```
 
 #### ind2sub( shape, idx\[, options] )
@@ -148,7 +148,7 @@ The function accepts the same `options` as above.
 
 ```javascript
 import numel from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-numel@deno/mod.js';
-import ind2sub from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-ind2sub@deno/mod.js';
+import ind2sub from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-ind2sub@v0.2.2-deno/mod.js';
 
 var shape = [ 3, 3, 3 ];
 var len = numel( shape );
