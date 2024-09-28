@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-08-01)
+## Unreleased (2024-09-28)
 
 <section class="commits">
 
@@ -12,7 +12,7 @@
 
 <details>
 
--   [`22c4d29`](https://github.com/stdlib-js/stdlib/commit/22c4d29898e2b5bb4cb071a6b7f62536027eaf28) - **docs:** remove blank line _(by Athan Reines)_
+-   [`abf0407`](https://github.com/stdlib-js/stdlib/commit/abf040787f6598438b0100a729a8331b7f80f62f) - **chore:** resolve lint errors in TS files _(by Philipp Burckhardt)_
 
 </details>
 
@@ -26,7 +26,7 @@
 
 A total of 1 person contributed to this release. Thank you to this contributor:
 
--   Athan Reines
+-   Philipp Burckhardt
 
 </section>
 
@@ -60,7 +60,55 @@ No changes reported for this release.
 
 ## 0.2.0 (2024-02-15)
 
-No changes reported for this release.
+<section class="features">
+
+### Features
+
+-   [`12102f1`](https://github.com/stdlib-js/stdlib/commit/12102f1b974064f4c0ca0156e435e9299ad75c68) - add support for `normalize` index mode
+
+</section>
+
+<!-- /.features -->
+
+<section class="bug-fixes">
+
+### Bug Fixes
+
+-   [`08d72b4`](https://github.com/stdlib-js/stdlib/commit/08d72b4a33847fd4ce8da0eca7875eaac118e68c) - improve type declarations
+
+</section>
+
+<!-- /.bug-fixes -->
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`34ac72a`](https://github.com/stdlib-js/stdlib/commit/34ac72a3d30bc14b366787a5660c44051d84bec5) - **docs:** document interface and add line break _(by Athan Reines)_
+-   [`08d72b4`](https://github.com/stdlib-js/stdlib/commit/08d72b4a33847fd4ce8da0eca7875eaac118e68c) - **fix:** improve type declarations _(by Athan Reines)_
+-   [`12102f1`](https://github.com/stdlib-js/stdlib/commit/12102f1b974064f4c0ca0156e435e9299ad75c68) - **feat:** add support for `normalize` index mode _(by Athan Reines)_
+-   [`453dd85`](https://github.com/stdlib-js/stdlib/commit/453dd85b5dd186d2b4d458256fe84906e1503fe2) - **build:** remove tslint directives _(by Philipp Burckhardt)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 2 people contributed to this release. Thank you to the following contributors:
+
+-   Athan Reines
+-   Philipp Burckhardt
+
+</section>
+
+<!-- /.contributors -->
 
 </section>
 
@@ -80,7 +128,54 @@ No changes reported for this release.
 
 ## 0.1.0 (2023-09-23)
 
-No changes reported for this release.
+<section class="features">
+
+### Features
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - update minimum TypeScript version
+
+</section>
+
+<!-- /.features -->
+
+<section class="breaking-changes">
+
+### BREAKING CHANGES
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0): update minimum TypeScript version to 4.1
+
+    -   To migrate, users should upgrade their TypeScript version to at least version 4.1.
+
+</section>
+
+<!-- /.breaking-changes -->
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`7ae5741`](https://github.com/stdlib-js/stdlib/commit/7ae574143c9716c82cea6cbf839a20b70a9cdfe0) - **feat:** update minimum TypeScript version _(by Philipp Burckhardt)_
+-   [`ab5d324`](https://github.com/stdlib-js/stdlib/commit/ab5d324b547870938b21ebdeecc1f7fda132f321) - **chore:** resolve lint errors _(by Philipp Burckhardt)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 1 person contributed to this release. Thank you to this contributor:
+
+-   Philipp Burckhardt
+
+</section>
+
+<!-- /.contributors -->
 
 </section>
 
